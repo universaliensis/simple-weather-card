@@ -4,7 +4,7 @@ function getStyles(css) {
       display: flex;
       flex-flow: row;
       align-items: center;
-      padding: 16px;
+      padding: 10px;
       color: var(--primary-text-color, #000);
       font-weight: var(--swc-font-weight, 400);
       transition: background 1s;
@@ -25,51 +25,68 @@ function getStyles(css) {
       background: linear-gradient(var(--night-color) 0%, transparent 300%);
     }
     .weather__icon {
-      height: 40px;
-      width: 40px;
+      height: 100px;
+      width: 100px;
       background-size: contain;
       background-repeat: no-repeat;
-      flex: 0 0 40px;
+      flex: 0 0 100px;
       color: white;
       margin-right: 16px;
     }
     .weather__icon--small {
       display: inline-block;
-      height: 1em;
-      width: 1em;
-      min-width: 1em;
+      height: 1.5em;
+      width: 1.5em;
+      min-width: 1.5em;
       flex: initial;
       margin: 0 .2em;
     }
     .weather__info {
       display: flex;
+      align-items:flex-start;
+      align-content:flex-start;
       flex-flow: column;
       justify-content: space-between;
-      min-height: 42px;
+      min-height: 50px;
       min-width: 0;
     }
     .weather__info__row {
       display: flex;
       align-items: center;
       max-width: 100%;
+      padding-top:2px;
     }
     .weather__info__item {
-      padding-left: 8px;
+      padding: 10px;
       display: flex;
       align-items: center;
+      font-size: 25px;
     }
     .weather__info--add {
-      padding-left: 8px;
+      padding-left: 10px;
       margin-left: auto;
       align-items: flex-end;
+      display: flex;
+
     }
-    .weather__info__state,
-    .weather__info__title,
+    .weather__info__state {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 25px;
+      padding:5px;
+    }
+    .weather__info__title {,
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 40px;
+      line-height: 1;
+    }
     .weather__info__row {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-size: 20px
     }
   `;
 }
