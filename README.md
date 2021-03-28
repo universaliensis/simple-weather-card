@@ -13,7 +13,7 @@ A minimalistic weather card for [Home Assistant](https://github.com/home-assista
 
 ### Manual install
 
-1. Download and copy `simple-weather-card-bundle.js` from the [latest release](https://github.com/kalkih/simple-weather-card/releases/latest) into your `config/www` directory.
+1. Download and copy `simple-weather-card-bundle.js` from the [latest release](https://github.com/universaliensis/simple-weather-card/releases/latest) into your `config/www` directory.
 
 2. Add a reference to `simple-weather-card-bundle.js` inside your `ui-lovelace.yaml` or through the raw config editor interface.
 
@@ -30,7 +30,7 @@ A minimalistic weather card for [Home Assistant](https://github.com/home-assista
 2. Download `simple-weather-card-bundle.js`
 
     ```console
-    $ wget https://github.com/kalkih/simple-weather-card/releases/download/v0.8.1/simple-weather-card-bundle.js
+    $ wget https://github.com/universaliensis/simple-weather-card/releases/download/v0.8.1/simple-weather-card-bundle.js
     ```
 
 3. Add a reference to `simple-weather-card-bundle.js` inside your `ui-lovelace.yaml` or through the raw config editor gui.
@@ -44,7 +44,7 @@ A minimalistic weather card for [Home Assistant](https://github.com/home-assista
 ## Updating
 1. Find your `simple-weather-card-bundle.js` file in `config/www` or wherever you ended up storing it.
 
-2. Replace the local file with the one found in the [latest release](https://github.com/kalkih/simple-weather-card/releases/latest).
+2. Replace the local file with the one found in the [latest release](https://github.com/universaliensis/simple-weather-card/releases/latest).
 
 3. Add the new version number to the end of the card reference url in your `ui-lovelace.yaml`. This will prevent the browser from loading the old version from cache.
 
